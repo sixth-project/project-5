@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-lg-6">
+      <h4>Country info</h4>
+      <dl>
+        <dt>MinPrice</dt>
+        <dd><%= @ticket["Quotes"][0]["MinPrice"] %></dd>
+        <dt>DepartureDate</dt>
+        <dd><%= @ticket["Quotes"][0]["OutboundLeg"]["DepartureDate"] %></dd>
+        <dt>OriginId</dt>
+        <dd><%= @ticket["Quotes"][0]["OutboundLeg"]["OriginId"] %></dd>
+        <dt>PlaceId</dt>
+        <dd><%= @ticket["Places"][0]["PlaceId"]%></dd>
+      </dl>
+    </div>
+
+    <dl>
+       <% @ticket['Carriers'].each do |tiks| %>
+       <dt><%= tiks['CarrierId'] %></dt>
+       <dt><%= tiks['Name'] %></dt>
+       <% end %>
+     </dl>
+    </div>
+  </div>
+</div>
