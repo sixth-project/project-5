@@ -56,6 +56,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2)
+    autoprefixer-rails (9.7.4)
+      execjs
     babel-source (5.8.35)
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
@@ -63,6 +65,10 @@ GEM
     bindex (0.8.1)
     bootsnap (1.4.5)
       msgpack (~> 1.0)
+    bootstrap (4.4.1)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 1.14.3, < 2)
+      sassc-rails (>= 2.0.0)
     builder (3.2.4)
     byebug (11.0.1)
     concurrent-ruby (1.1.5)
@@ -70,6 +76,7 @@ GEM
     crass (1.0.5)
     diff-lcs (1.3)
     erubi (1.9.0)
+    excon (0.72.0)
     execjs (2.7.0)
     ffi (1.11.3)
     globalid (0.4.2)
@@ -99,6 +106,7 @@ GEM
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     pg (1.2.2)
+    popper_js (1.16.0)
     puma (4.3.1)
       nio4r (~> 2.0)
     rack (2.1.1)
@@ -205,7 +213,9 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
+  bootstrap
   byebug
+  excon
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)

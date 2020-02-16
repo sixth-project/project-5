@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root 'static_pages#index'
+  root to: 'travels#index'
+  get '/search' => 'travels#search'
 end
